@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>E-Commerce de tecnologia</title>
 </head>
+
 <body>
     <header>
-        <div>
+        <div id="logo">
             <i class="fa-solid fa-bolt"></i>
             <h1>Tech Store</h1>
         </div>
 
-        <div>
-            <input type="text" name="pesquisa" id="pesquisa" placeholder="Buscar produtos" > 
+        <div id="container-busca">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Buscar produtos" autocomplete="off">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>
 
-    <div>
+    <div class="container-categorias">
         <nav>
-            <button>
+            <button class="botao-categorias ativo">
                 <i class="fa-solid fa-border-all"></i>
                 todos
             </button>
 
-            <button>
+            <button class="botao-categorias">
                 <i class="fa-solid fa-mobile-screen"></i>
                 Smartphones
             </button>
 
-            <button>
+            <button class="botao-categorias">
                 <i class="fa-solid fa-laptop"></i>
                 Notebooks
             </button>
 
-            <button>
+            <button class="botao-categorias">
                 <i class="fa-solid fa-headphones-simple"></i>
                 Fones
             </button>
 
-            <button>
+            <button class="botao-categorias">
                 <i class="fa-solid fa-computer-mouse"></i>
                 Acessórios
             </button>
 
-            <button>
+            <button class="botao-categorias">
                 <i class="fa-solid fa-clock"></i>
                 Smartwatch
             </button>
         </nav>
     </div>
 
-    <div>
+    <div id="secao-hero">
         <h2>Black Friday antecipada!</h2>
         <p>Até 50% de desconto em produtos selecionados</p>
     </div>
 
+    <div class="produtos">
+        <div class="container-produtos">
 
+        </div>
+    </div>
 
     <footer>
         <p>2026 - TechStore - Todos os direitos reservados</p>
     </footer>
 </body>
+    <script src="scripts.js"></script>
 </html>
