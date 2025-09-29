@@ -21,6 +21,9 @@ body {
     color: var(--texto-cor);
     background-color: var(--cinza-claro);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column; /* Organiza os filhos (header, main, footer) em coluna */
+    min-height: 100vh;
 }
 
 header {
@@ -29,6 +32,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+main {
+    flex-grow: 1;
 }
 
 #logo {
@@ -128,6 +135,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    
 }
 
 .cartao-produto{
@@ -196,4 +204,5 @@ footer{
     color: white;
     padding: 32px;
     text-align: center;
+    
 }
